@@ -1027,7 +1027,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	color: #7d7d7d;
 }
 .section-intro {
-	max-width: 700px;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -1499,8 +1499,9 @@ header .logo a {
 
 .intro-info {
 	margin-top: 4.2rem;
-	margin-right: -30px;
+	margin-right: 0px;
 	margin-left: -130px;
+	justify-content: center;
 	color: #4682b4;
 }
 .intro-info img {
@@ -1570,16 +1571,50 @@ header .logo a {
  * about
  * ------------------------------------------------------------------- 
  */
-@media only screen and (max-width:1024px) {
+ @media only screen and (min-width:1371px) {
+	.flex-about {
+		display: flex;
+		vertical-align: middle;
+		margin: 0 auto;
+		width: 100%;
+		max-width: 100%;
+	}
+	.profile-pic {
+		margin: auto auto;
+		margin-right: 50px;
+		vertical-align: middle;
+		align-items: center;
+		justify-content: center;
+	}
+	.row {
+		max-width: 90%;
+	}
+}
+
+@media only screen and (max-width:1370px) {
+	.flex-about {
+		vertical-align: middle;
+		margin: auto auto;
+		width: 100%;
+		max-width: 100%;
+		margin-right: auto;
+		margin-left: auto;
+	}
 	.intro-info {
-		margin-right: 0;
-		margin-left: 0;
+		margin-right: -10px;
+		margin-left: -110px;
+		align-content: center;
+	}
+	.row {
+		max-width: 75%;
 	}
 }
 @media only screen and (max-width:768px) {
 	.intro-info img {
 		height: 7.8rem;
 		width: 7.8rem;
+		margin-left: -80px;
+		margin-right: -50px;
 	}
 	.intro-info .lead {
 		padding-left: 11rem;
@@ -1602,6 +1637,7 @@ header .logo a {
 	.intro-info {
 		text-align: center;
 		margin-top: 3rem;
+		margin-left: 0px;
 	}
 	.intro-info img {
 		height: 6.6rem;
