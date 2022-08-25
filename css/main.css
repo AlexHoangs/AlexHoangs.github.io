@@ -525,7 +525,7 @@ select {
 	padding: 1.5rem 0;
 	border: 0;
 	outline: none;
-	vertical-align: middle;
+	/* vertical-align: middle; */
 	color: #313131;
 	font-family: "poppins-regular", sans-serif;
 	font-size: 1.5rem;
@@ -1610,6 +1610,9 @@ header .logo a {
 	}
 }
 @media only screen and (max-width:768px) {
+	.row {
+		max-width: 90%;
+	}
 	.intro-info img {
 		height: 7.8rem;
 		width: 7.8rem;

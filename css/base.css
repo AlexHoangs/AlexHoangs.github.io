@@ -393,7 +393,7 @@ textarea {
  */
 .row {
 	width: 94%;
-	max-width: 85%;
+	max-width: 100%;
 	margin: auto auto;
 }
 
